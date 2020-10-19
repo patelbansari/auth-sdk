@@ -61,7 +61,7 @@ public class SampleCode {
 		System.out.print("Type a sample name & then press <Return> : ");
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		try {
-			RunMethod(br.readLine());
+			RunMethod("CreateCustomerProfile");
 		} catch (Exception ex) {
 			System.out.println(ex.toString());
 		}
@@ -133,8 +133,8 @@ public class SampleCode {
 		// These are default transaction keys.
 		// You can create your own keys in seconds by signing up for a sandbox account
 		// here: https://developer.authorize.net/sandbox/
-		String apiLoginId = "5KP3u95bQpv";
-		String transactionKey = "346HZ32z3fP4hTG2";
+		String apiLoginId = "6Nq5sJ4uNL";
+		String transactionKey = "2kLSUgM8ns4294CP";
 		// Update the payedId with which you want to run the sample code
 		String payerId = "6ZSCSYG33VP8Q";
 		// Update the transactionId with which you want to run the sample code
@@ -144,11 +144,11 @@ public class SampleCode {
 		String customerPaymentProfileId = "33086593";
 		String customerAddressId = "1873761911";
 
-		String emailId = "test@test.com";
+		String emailId = "test1@test.com";
 
 		String subscriptionId = "2925606";
 
-		Double amount = 123.45;
+		Double amount = 100.0;
 
 		// Proxy server settings.
 		// Enable these lines for using Sample Codes behind a proxy server

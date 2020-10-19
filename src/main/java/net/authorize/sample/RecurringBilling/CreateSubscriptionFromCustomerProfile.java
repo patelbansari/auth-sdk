@@ -70,7 +70,7 @@ public class CreateSubscriptionFromCustomerProfile {
 
              if (response.getMessages().getResultCode() == MessageTypeEnum.OK) {
 
-                System.out.println(response.getSubscriptionId());
+                System.out.println("Subscription id--->"+response.getSubscriptionId());
                 System.out.println(response.getMessages().getMessage().get(0).getCode());
                 System.out.println(response.getMessages().getMessage().get(0).getText());
             }

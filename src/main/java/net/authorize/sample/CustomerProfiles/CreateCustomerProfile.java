@@ -56,7 +56,7 @@ public class CreateCustomerProfile {
             if (response.getMessages().getResultCode() == MessageTypeEnum.OK) {
                 System.out.println(response.getCustomerProfileId());
                 if (!response.getCustomerPaymentProfileIdList().getNumericString().isEmpty()) {
-                    System.out.println(response.getCustomerPaymentProfileIdList().getNumericString().get(0));
+                    System.out.println("CustomerPaymentProfileIdList() "+response.getCustomerPaymentProfileIdList().getNumericString().get(0));
                 }
                 if (!response.getCustomerShippingAddressIdList().getNumericString().isEmpty()) {
                     System.out.println(response.getCustomerShippingAddressIdList().getNumericString().get(0));
